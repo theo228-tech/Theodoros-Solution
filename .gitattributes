@@ -1,0 +1,9 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+eltheodoros-frontend/release/**/*.exe filter=lfs diff=lfs merge=lfs -text
+eltheodoros-frontend/release/**/*.dll filter=lfs diff=lfs merge=lfs -text
+eltheodoros-frontend/release/**/*.pak filter=lfs diff=lfs merge=lfs -text
+eltheodoros-frontend/release/**/*.yaml filter=lfs diff=lfs merge=lfs -text
+eltheodoros-frontend/release/**/*.yml filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.pak filter=lfs diff=lfs merge=lfs -text

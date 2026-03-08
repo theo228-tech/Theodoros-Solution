@@ -1,0 +1,13 @@
+{
+  "short_name": "Theodoros",
+  "name": "El Theodoros Solution",
+  "icons": [
+    { "src": "icons/gara4.jpg", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/Logoss.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4CAF50",
+  "background_color": "#ffffff"
+}
+

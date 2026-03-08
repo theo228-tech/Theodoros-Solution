@@ -1,0 +1,241 @@
+
+/* ======= STYLES POUR LA PAGE PRODUITS ======= */
+/*espace produits*/
+.espace-produis {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #470202;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== BASE ===== */
+.produits-container {
+  padding: 35px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  color: #1a1a1a;
+}
+
+/* ===== TITRE ===== */
+.produits-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #111827;
+}
+
+/* ===== BOUTON RETOUR ===== */
+.btn-retour {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-retour:hover {
+  background-color: #2563eb;
+}
+
+/* ===== BLOCS FORM ===== */
+.form-section {
+  background: #ffffff;
+  padding: 22px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+/* ===== INPUTS ===== */
+.form-section input,
+.form-section select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  min-width: 160px;
+  background-color: #f9fafb;
+  transition: 0.2s ease;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+  border-color: #2563eb;
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* ===== BOUTONS ===== */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+  transform: scale(1.05);
+}
+
+/* ===== TABLE ===== */
+.table-wrapper {
+  background: white;
+  border-radius: 16px;
+  overflow-x: auto;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+thead {
+  background-color: #111827;
+  color: rgb(255, 0, 0);
+}
+
+th {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+td {
+  padding: 14px;
+  font-size: 14px;
+  border-bottom: 1px solid #244c9c;
+}
+
+tbody tr:hover {
+  background-color: rgb(199, 64, 64);
+}
+
+/* ===== TOTAL GENERAL ===== */
+.total-general {
+  margin-top: 30px;
+  padding: 16px 22px;
+  background-color: #16a34a;
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+
+/* du nouveau pour les inputs et les boutons dans le formulaire de produits et stok */
+
+/* ===== BLOCS FORMULAIRES ===== */
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+/* ===== INPUTS ===== */
+.form-group input,
+.form-group select {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  min-width: 150px;
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+/* ===== BOUTONS ===== */
+.form-group button {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 60;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.form-group button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37,99,235,0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group button {
+    width: 60%;
+  }
+
+  .form-group button {
+    margin-top: 10px;
+  }
+}
+
+/* bouton suprimer*/
+.btn-supprimer {
+  background-color: rgb(182, 30, 30);
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  gap: 50px;
+
+}
+
+.btn-supprimer:hover {
+  background-color: rgb(228, 153, 153);
+}

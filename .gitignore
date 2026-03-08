@@ -1,0 +1,21 @@
+# Dépendances Backend (si vous utilisez Composer)
+theodoros-backend/vendor/
+theodoros-backend/.env
+
+# Spécifique à Laravel (si c'est votre backend)
+theodoros-backend/storage/*.key
+theodoros-backend/storage/framework/cache/data/*
+theodoros-backend/storage/framework/sessions/*
+theodoros-backend/storage/framework/views/*
+
+# Frontend & Electron
+eltheodoros-frontend/node_modules/
+eltheodoros-frontend/dist/
+eltheodoros-frontend/release/
+eltheodoros-frontend/.env
+
+# Fichiers système et IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
